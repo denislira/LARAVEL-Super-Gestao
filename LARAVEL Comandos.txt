@@ -1,0 +1,15 @@
+#CONFIGURAR COMPOSER
+composer config -g repo.packagist composer https://packagist.org
+composer config -g github-protocols https ssh
+
+#CRIANDO PROJETO via Composer
+composer create-project --prefer-dist laravel/laravel example-app
+
+#RODANDO, iniciar o SERVIDOR
+php artisan serve
+
+#CRIAR CONTROLLERS
+php artisan make:controller PricipalController
+
+#VER ROTAS Comando
+php artisan route:list
